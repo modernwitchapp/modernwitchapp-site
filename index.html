@@ -6,6 +6,8 @@
 
     <title>Modern Witch Digital Spellbook</title>
 
+    <link rel="canonical" href="https://modernwitchapp.com/" />
+
     <!-- Open Graph for previews -->
     <meta property="og:title" content="Modern Witch Digital Spellbook" />
     <meta
@@ -13,23 +15,31 @@
       content="A spellbook for modern life. Written spells, guided rituals, and the why behind the magic."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://modernwitchapp.com" />
-    <meta property="og:image" content="https://modernwitchapp.com/og-image-wide.png" />
+    <meta property="og:url" content="https://modernwitchapp.com/" />
+
+    <!-- Use a non-redirected, always-reachable image -->
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/modernwitchapp/modernwitch-preview/main/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
 
-    <!-- iMessage / Twitter -->
+    <!-- Twitter / iMessage -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://modernwitchapp.com/og-image-wide.png" />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/modernwitchapp/modernwitch-preview/main/og-image.png"
+    />
 
-    <!-- Redirect humans AFTER bots read metadata -->
-    <meta http-equiv="refresh" content="0; url=https://magic-spells-guide.deploypad.app/" />
+    <!-- Redirect humans AFTER crawlers read metadata -->
+    <script>
+      setTimeout(function () {
+        window.location.href = "https://magic-spells-guide.deploypad.app/";
+      }, 1500);
+    </script>
   </head>
 
-  <body>
-    <script>
-      window.location.replace("https://magic-spells-guide.deploypad.app/");
-    </script>
-  </body>
+  <body></body>
 </html>
